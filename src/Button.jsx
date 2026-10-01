@@ -5,8 +5,7 @@ const StyledButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 10px 5px;
+  padding: 12px;
   outline: none;
   border: none;
   border-radius: 4px;
@@ -23,7 +22,9 @@ const StyledButton = styled.button`
 
 const Button = ({ children, variant = 'primary', ...props}) => {
   return (
-    <StyledButton $variant={variant} {...props}>
+    <StyledButton 
+    $variant={variant} 
+    {...props}>
       {children}
     </StyledButton>
     
